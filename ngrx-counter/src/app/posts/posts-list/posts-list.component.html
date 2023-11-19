@@ -1,0 +1,5 @@
+<ul *ngIf="posts$ | async as postsDate">
+    <li *ngFor="let post of postsDate">
+        {{ post.description }}
+    </li>
+</ul>
